@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 
 namespace змейка
 {
@@ -26,6 +27,23 @@ namespace змейка
             Slit Slit = new Slit(p, 4, dis.R);
             
             Slit.Drow();
+
+
+            Slit.Move();
+            Thread.Sleep(300);
+            Slit.Move();
+            Thread.Sleep(300);
+            Slit.Move();
+            Thread.Sleep(300);
+            Slit.Move();
+            Thread.Sleep(300);
+            Slit.Move();
+            Thread.Sleep(300);
+            Slit.Move();
+            Thread.Sleep(300);
+            Slit.Move();
+            Thread.Sleep(300);
+         
            
 
             Console.ReadLine();
