@@ -23,7 +23,9 @@ namespace змейка
 
 
             Point p = new Point(4,5,'*');
-            p.Draw();
+            Slit Slit = new Slit(p, 4, dis.R);
+            
+            Slit.Drow();
            
 
             Console.ReadLine();

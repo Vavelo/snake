@@ -5,9 +5,9 @@ using System.Text;
 
 namespace змейка
 {
-    class HLine
+    class HLine : FR
     {
-        List<Point> plist;
+        
 
         public HLine(int xl, int xr, int y, char sym)
     {
@@ -16,17 +16,11 @@ namespace змейка
         for(int x = xl; x <= xr; x++)
                {
                Point p = new Point (x, y, sym);
-                  plist.Add(p );
+                  plist.Add( p );
                }
     }
 
 
-        public void Drow()
-        {
-            
-            foreach(Point p in plist)
-                p.Draw();
-        }
 
     }
 }
