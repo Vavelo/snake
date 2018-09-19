@@ -15,26 +15,12 @@ namespace змейка
             Point p2 = new Point(4, 5, '#');
             p2.Draw();
 
-            List<int> numList = new List<int>();
-            numList.Add( 1 );
-            numList.Add( 2 );
-            numList.Add( 3 );
+            HLine line = new HLine(5, 10, 8, '+');
+            line.Drow();
 
-            int x = numList[0];
-            int y = numList[1];
-            int z = numList[2];
-
-            foreach(int i in numList)
-            {
-                Console.WriteLine(i);
-            }
-
-            numList.RemoveAt(0);
-
-            List<Point> plist = new List<Point>();
-
-            plist.Add(p1);
-            plist.Add(p2);
+            VLine lin = new VLine(5, 10, 8, '=');
+            line.Drow();
+           
 
             Console.ReadLine();
 
