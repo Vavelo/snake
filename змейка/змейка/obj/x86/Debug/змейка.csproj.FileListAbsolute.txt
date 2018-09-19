@@ -4,3 +4,5 @@ C:\the hunter nightmare\змейка\змейка\obj\x86\Debug\змейка.exe
 C:\the hunter nightmare\змейка\змейка\obj\x86\Debug\змейка.pdb
 D:\пше\Vavelon\snake1\змейка\змейка\obj\x86\Debug\змейка.exe
 D:\пше\Vavelon\snake1\змейка\змейка\obj\x86\Debug\змейка.pdb
+D:\пше\Vavelon\snake0\змейка\змейка\obj\x86\Debug\змейка.exe
+D:\пше\Vavelon\snake0\змейка\змейка\obj\x86\Debug\змейка.pdb
