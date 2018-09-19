@@ -28,23 +28,25 @@ namespace змейка
             
             Slit.Drow();
 
+            while (true)
+            {
+                if(Console.KeyAvailable)
+                {
+                    ConsoleKeyInfo key = Console.ReadKey();
+                    if (key.Key == ConsoleKey.LeftArrow)
+                        Slit.D = dis.L;
+                    else if (key.Key == ConsoleKey.RightArrow)
+                        Slit.D = dis.R;
+                    else if (key.Key == ConsoleKey.UpArrow)
+                        Slit.D = dis.U;
+                    else if (key.Key == ConsoleKey.DownArrow)
+                        Slit.D = dis.D;
+                }
 
-            Slit.Move();
-            Thread.Sleep(300);
-            Slit.Move();
-            Thread.Sleep(300);
-            Slit.Move();
-            Thread.Sleep(300);
-            Slit.Move();
-            Thread.Sleep(300);
-            Slit.Move();
-            Thread.Sleep(300);
-            Slit.Move();
-            Thread.Sleep(300);
-            Slit.Move();
-            Thread.Sleep(300);
-         
-           
+
+                Thread.Sleep(100);
+                Slit.Move();
+            }
 
             Console.ReadLine();
 

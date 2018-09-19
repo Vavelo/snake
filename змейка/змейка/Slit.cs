@@ -7,7 +7,7 @@ namespace змейка
 {
     class Slit : FR
     {
-        dis D;
+        public dis D;
         public Slit(Point tail, int length, dis _D)
         {
             D = _D;

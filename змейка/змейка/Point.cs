@@ -33,7 +33,7 @@ namespace змейка
                }
                else if (D == dis.U)
                {
-                   y += offset;
+                   y -= offset;
                }
                else if (D == dis.L)
                {
@@ -41,7 +41,7 @@ namespace змейка
                }
                else 
                {
-                   y -= offset;
+                   y += offset;
                }
            }
 
