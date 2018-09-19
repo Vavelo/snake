@@ -9,17 +9,21 @@ namespace змейка
     {
         static void Main(string[] args)
         {
-            Point p1 = new Point(1, 3, '*');
-            p1.Draw();
+            Console.SetBufferSize(80,25);
 
-            Point p2 = new Point(4, 5, '#');
-            p2.Draw();
+            HLine UL = new HLine(0, 78, 0, '+');
+            HLine DL = new HLine(0, 78, 24, '+');
+            VLine LL = new VLine(0, 24, 0, '+');
+            VLine RL = new VLine(0, 24, 78, '+');
 
-            HLine line = new HLine(5, 10, 8, '+');
-            line.Drow();
+            UL.Drow();
+            DL.Drow();
+            LL.Drow();
+            RL.Drow();
 
-            VLine lin = new VLine(5, 10, 8, '=');
-            line.Drow();
+
+            Point p = new Point(4,5,'*');
+            p.Draw();
            
 
             Console.ReadLine();
