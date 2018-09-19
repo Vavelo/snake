@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="dis.cs" />
+    <Compile Include="FC.cs" />
     <Compile Include="FR.cs" />
     <Compile Include="HLine.cs" />
     <Compile Include="Point.cs" />

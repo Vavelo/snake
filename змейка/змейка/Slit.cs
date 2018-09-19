@@ -39,5 +39,12 @@ namespace змейка
             nextP.Move(1, D);
             return nextP;
         }
+
+
+
+        internal bool E(Point food)
+        {
+ 
+        }
     }
 }

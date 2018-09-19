@@ -28,6 +28,27 @@ namespace змейка
             
             Slit.Drow();
 
+            FC fc = new FC(80, 25, '$');
+            Point food = fc.CF();
+            food.Draw();
+
+
+            while (true)
+            {
+                if (Slit.Eat(food))
+                {
+                    food = fc.CF();
+                    food.Draw();
+                }
+                else
+
+                {
+                    Slit.Move();
+                }
+                Thread.Sleep(100);
+            }
+
+
             while (true)
             {
                 if(Console.KeyAvailable)
