@@ -40,6 +40,14 @@ namespace змейка
             return nextP;
         }
 
+        internal bool IsHitTail() {
+            var head = plist.Last();
+            for (int i = 0; i < plist.Count - 2; i++) {
+                if (head.IsHit(plist[i]))
+                    return true;
+            }
+            return false;
+        }
         public void HK(ConsoleKey key)
         {
             if (key == ConsoleKey.LeftArrow)

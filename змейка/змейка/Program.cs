@@ -10,57 +10,47 @@ namespace змейка
     {
         static void Main(string[] args)
         {
-            Console.SetBufferSize(80, 25);
+            Console.SetBufferSize(100, 200);
 
-            HLine UL = new HLine(0, 78, 0, '+');
-            HLine DL = new HLine(0, 78, 24, '+');
-            VLine LL = new VLine(0, 24, 0, '+');
-            VLine RL = new VLine(0, 24, 78, '+');
+            Walls walls = new Walls(100, 200);
+            walls.Draw();
 
-            UL.Draw();
-            DL.Draw();
-            LL.Draw();
-            RL.Draw();
-
-
+            // Отрисовка точек			
             Point p = new Point(4, 5, '*');
-            Slit Slit = new Slit(p, 4, dis.R);
+            Slit snake = new Slit(p, 4, dis.R);
+            snake.Draw();
 
-            Slit.Draw();
-
-            FC fc = new FC(80, 25, '$');
-            Point food = fc.CF();
+            FC foodCreator = new FC(80, 25, '$');
+            Point food = foodCreator.CF();
             food.Draw();
-
+            food.Draw();
+            food.Draw();
+            food.Draw();
 
             while (true)
             {
-                if (Slit.Eat(food))
+                if (walls.IsHit(snake) || snake.IsHitTail())
                 {
-                    food = fc.CF();
+                    break;
+                }
+                if (snake.Eat(food))
+                {
+                    food = foodCreator.CF();
                     food.Draw();
                 }
                 else
                 {
-                    Slit.Move();
+                    snake.Move();
                 }
+
                 Thread.Sleep(100);
                 if (Console.KeyAvailable)
                 {
                     ConsoleKeyInfo key = Console.ReadKey();
-                    Slit.HK(key.Key);
-
+                    snake.HK(key.Key);
                 }
-
             }
-
-
-
         }
-
-
-
 
     }
 }
-

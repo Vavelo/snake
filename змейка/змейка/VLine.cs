@@ -7,11 +7,10 @@ namespace змейка
 {
     class VLine : FR
     {
-        public VLine(int yl, int yr, int x, char sym)
+        public VLine(int yUp, int yDown, int x, char sym)
         {
             plist = new List<Point>();
-
-            for (int y = yl; x <= yr; x++)
+            for (int y = yUp; y <= yDown; y++)
             {
                 Point p = new Point(x, y, sym);
                 plist.Add(p);
