@@ -10,7 +10,7 @@ namespace змейка
         protected List<Point> plist;
 
 
-        public virtual void draw()
+        public virtual void Draw()
         {
             foreach (Point p in plist)
             {

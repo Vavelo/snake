@@ -40,11 +40,30 @@ namespace змейка
             return nextP;
         }
 
-
-
-        internal bool E(Point food)
+        public void HK(ConsoleKey key)
         {
-            return true ;
+            if (key == ConsoleKey.LeftArrow)
+                D = dis.L;
+            else if (key == ConsoleKey.RightArrow)
+                D = dis.R;
+            else if (key == ConsoleKey.UpArrow)
+                D = dis.U;
+            else if (key == ConsoleKey.DownArrow)
+                D = dis.D;
+        
+        }
+
+        internal bool Eat(Point food)
+        {
+            Point head = GNP();
+            if (head.IsHit(food))
+            {
+                food.sym = head.sym;
+                plist.Add(food);
+                return true;
+            }
+            else 
+                return false; 
  
         }
     }
