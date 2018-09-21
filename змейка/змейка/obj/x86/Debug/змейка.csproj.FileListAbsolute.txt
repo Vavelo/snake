@@ -8,3 +8,4 @@ D:\пше\Vavelon\snake0\змейка\змейка\obj\x86\Debug\змейка.ex
 D:\пше\Vavelon\snake0\змейка\змейка\obj\x86\Debug\змейка.pdb
 D:\пше\Vavelon\snake0\змейка\змейка\bin\Debug\змейка.exe
 D:\пше\Vavelon\snake0\змейка\змейка\bin\Debug\змейка.pdb
+D:\пше\Vavelon\snake0\змейка\змейка\obj\x86\Debug\змейка.csprojResolveAssemblyReference.cache

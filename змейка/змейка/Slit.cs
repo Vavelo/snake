@@ -44,6 +44,7 @@ namespace змейка
 
         internal bool E(Point food)
         {
+            return true ;
  
         }
     }
